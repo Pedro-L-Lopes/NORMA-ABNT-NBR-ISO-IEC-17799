@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 20px;
+  text-align: center;
+}
+
+.toggle-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  padding: 8px;
+}
+
+.toggle-button:hover {
+  background-color: #ffffffa9;
+  border-radius: 10px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+  margin-right: 10px;
+  width: 18px;
+}
+
+.arrow.down {
+  transform: rotate(90deg);
+}
+
+.content {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.content p {
+  text-indent: 20px;
+}
+
+.glossario-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: large;
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+#searchInput {
+  width: 50vw;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  border: 1px solid rgba(44, 44, 44, 0.603);
+  transition: 0.3s, transform 0.3s;
+}
+
+#searchInput:hover {
+  border: 1px solid rgba(44, 44, 44, 0.603);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.505);
+  transition: 0.3s, transform 0.3s;
+}
+
+#letras {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.letra {
+  font-size: large;
+  border-radius: 5px;
+  border: none;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.letra:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+#glossario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.term {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.term h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: -17px;
+}
+
+.term p {
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+.term:hover {
+  background-color: #ffffffa9;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 1em 1em;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+  #glossario {
+    padding: 20px;
+  }
+}
